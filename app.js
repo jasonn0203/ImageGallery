@@ -8,7 +8,7 @@ const btnClose = $(".control.close");
 const btnPrev = $(".control.previous");
 const btnNext = $(".control.next");
 
-// ---------------4
+// --------------------------------//
 showImage = () => {
   //Hide previous button when click on first image
   if (currentIndex <= 0) {
@@ -48,6 +48,7 @@ btnPrev.onclick = () => {
     showImage();
   }
 };
+
 //NOTE Close
 btnClose.onclick = () => {
   gallery.classList.remove("show");
