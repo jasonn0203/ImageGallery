@@ -5,7 +5,6 @@
 }
 body {
   background-color: #dadada;
-  overflow: hidden;
 }
 .container {
   min-height: 100vh;
@@ -93,4 +92,33 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .container {
+    padding: 10px;
+  }
+  .image__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery__content img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    height: auto;
+  }
+  .image__list {
+    grid-template-columns: 1fr;
+  }
+  .next {
+    right: 10px;
+  }
+  .previous {
+    left: 10px;
+  }
 }
